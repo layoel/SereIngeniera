@@ -1,12 +1,7 @@
-
+//Programas de prueba para consultar las mediciones de los sensores.
 //porta pilas 12V https://www.youtube.com/watch?v=45mqkY-hYU4
 //SENSOR DE LLUVIA
 
-/*
- *https://www.luisllamas.es/arduino-lluvia/
- * 
- *
- */
  const int sensorPin = 9;
 void setup() {
   Serial.begin(9600);   //iniciar puerto serie
