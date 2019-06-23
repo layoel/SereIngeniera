@@ -1,7 +1,7 @@
 /*
  * Realiza los siguientes cambios por orden y observa ¿que pasa?
  * 
- * 1º PRUEBA CAMBIAR LOS VALORES DE  ENTRE 0 Y 255 Y SUBELO A LA PLACA 
+ * 1º PRUEBA CAMBIAR LOS VALORES DE  ENTRE 0 Y 255 de colR colG y colB Y SUBELO A LA PLACA 
  * 
  * 2º CAMBIA el valor de DELAYVAL y subelo a la placa
  * 
@@ -18,14 +18,12 @@
  *
  *7º ENCIENDE todos los leds a la vez del color que más te guste.
  *
- *8º ENCIENDE cada led de un color distinto.
+ *8º ENCIENDE cada led de un color distinto. 
  *
- *9º ENCIENDE cada led de un color distinto. 
- *
- *10º Crea el vector1 de leds con los leds 3,4,5 y vector2 de leds con los led 1 y 2. 
+ *9º Crea el vector1 de leds con los leds 3,4,5 y vector2 de leds con los led 1 y 2. 
  *Ponles el color rojo al vector1 y color azul al vector 2
  *
- *¡Ya estamos listas para montar nuestro caleidoscopio y crear
+ *10º ¡Ya estamos listas para montar nuestro caleidoscopio y crear
  * la secuencia que queremos para los leds de colores!
  */
 
@@ -82,7 +80,7 @@ void loop() {
     pixels.show();   
     delay(DELAYVAL); 
   }
-      for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
+      for(int i=0; i<NUMPIXELS; i++) {
     pixels.setPixelColor(i, pixels.Color(colR, colG, colB));
     pixels.show();   
     delay(DELAYVAL);
